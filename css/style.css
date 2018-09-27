@@ -1,15 +1,53 @@
 body {
   display: grid;
-  grid-template-columns: 1fr 6fr;
-}
-body nav {
-  display: flex;
-  flex-direction: column;
-  margin: 1em auto;
-}
-body nav h1 {
-  text-align: center;
-}
-body nav .upgrade {
-  al: flex-end;
-}
+  font-family: 'Open-Sans', sans-serif;
+  grid-template-columns: 3fr 9fr;
+  margin: 0 auto; }
+  body nav:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url("./../img/mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: blur(2px) grayscale(90%) opacity(70%); }
+  body nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    position: relative; }
+    body nav header {
+      padding: 0.5em; }
+      body nav header h1 {
+        text-align: center;
+        padding: .5em;
+        font-variant: small-caps; }
+      body nav header hr {
+        width: 80%; }
+    body nav ul {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px; }
+      body nav ul li {
+        list-style: none; }
+      body nav ul :hover {
+        background-color: purple;
+        border-radius: 6px;
+        color: white; }
+      body nav ul .upgrade {
+        justify-content: flex-end;
+        margin-top: auto; }
+    body nav a {
+      color: #333333;
+      display: block;
+      text-decoration: none;
+      padding: 1em 2em; }
+      body nav a i {
+        padding-right: .8em; }
+
+/*# sourceMappingURL=style.css.map */
