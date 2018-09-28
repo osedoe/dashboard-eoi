@@ -1,0 +1,72 @@
+nav:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: block;
+	background-image: url("./../img/mountains.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	filter: blur(2px) grayscale(90%) opacity(70%);
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	position: relative;
+
+	& header {
+		padding: 0.5em;
+
+		& h1 {
+			text-align: center;
+			padding: 0.5em;
+			font-variant: small-caps;
+		}
+
+		& hr {
+			width: 80%;
+		}
+	}
+
+	& ul {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 20px;
+
+		& li {
+			list-style: none;
+			color: white;
+
+			&:hover {
+				background-color: purple;
+				border-radius: 6px;
+			}
+		}
+
+		& .upgrade {
+			justify-content: flex-end;
+			margin-top: auto;
+		}
+	}
+
+	& a {
+		color: var(light-grey);
+		display: block;
+		text-decoration: none;
+		padding: 1em 2em;
+
+		&:hover {
+			color: white;
+			opacity: 1;
+		}
+
+		& i {
+			padding-right: 0.8em;
+		}
+	}
+}
