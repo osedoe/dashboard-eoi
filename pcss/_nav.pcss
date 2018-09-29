@@ -8,11 +8,12 @@ nav:after {
 	background-image: url("./../img/mountains.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 100vh;
-	filter: blur(2px) grayscale(90%) opacity(70%);
+	height: 100%;
+	filter: blur(1px) grayscale(70%) opacity(40%);
 }
 
 nav {
+	box-shadow: 0 5px 10px var(--dark-grey);
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -26,6 +27,7 @@ nav {
 			text-align: center;
 			padding: 0.5em;
 			font-variant: small-caps;
+			text-shadow: 0 0 10px var(--light-grey);
 		}
 
 		& hr {
@@ -40,7 +42,6 @@ nav {
 
 		& li {
 			list-style: none;
-			color: white;
 
 			&:hover {
 				background-color: purple;
